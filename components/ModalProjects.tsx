@@ -41,7 +41,7 @@ export function ModalProjects() {
             <DialogTrigger asChild>
                 <Button variant="ghost" className="text-lime-600 hover:bg-white hover:text-lime-600 hover:underline">More...</Button>
             </DialogTrigger>
-            <DialogContent className="sm:max-w-3xl">
+            <DialogContent className="sm:max-w-3xl overflow-y-auto max-h-[80vh]">
                 <DialogHeader>
                     <DialogTitle>More Projects</DialogTitle>
                 </DialogHeader>

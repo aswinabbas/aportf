@@ -47,13 +47,23 @@ const Works = () => {
                                 />
                             </div>
                             <div>
-                                <h3 className="font-semibold text-gray-900 dark:text-white text-base group-hover:text-lime-600 dark:group-hover:text-lime-400 transition-colors">
+                                <h3 className="font-semibold text-gray-900 dark:text-white text-sm md:text-base group-hover:text-lime-600 dark:group-hover:text-lime-400 transition-colors">
                                     {job.company}
                                 </h3>
-                                <p className="text-gray-600 dark:text-gray-300 text-sm font-light">{job.role}</p>
+                                <p className="text-gray-600 dark:text-gray-300 text-xs md:text-sm font-light">{job.role}</p>
+                                {window.innerWidth < 768 && (
+                                    <div className="text-gray-400 dark:text-gray-300 text-xs md:text-sm font-light mt-2">
+                                        {job.period}
+                                    </div>
+                                )}
                             </div>
+
                         </div>
-                        <div className="text-gray-600 dark:text-gray-300 text-sm font-light">{job.period}</div>
+                        {window.innerWidth >= 768 && (
+                            <div className="text-gray-400 dark:text-gray-300 text-xs md:text-sm font-light">
+                                {job.period}
+                            </div>
+                        )}
                     </div>
                 ))}
             </div>

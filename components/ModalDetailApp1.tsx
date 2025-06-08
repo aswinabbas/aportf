@@ -38,7 +38,7 @@ export function ModalDetailApp1() {
                     Details
                 </Button>
             </DialogTrigger>
-            <DialogContent className="sm:max-w-5xl">
+            <DialogContent className="sm:max-w-5xl overflow-y-auto max-h-[80vh]">
                 <DialogHeader>
                     <DialogTitle>Detail Projects</DialogTitle>
                 </DialogHeader>
